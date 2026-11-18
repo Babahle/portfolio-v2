@@ -1,48 +1,63 @@
-# .
+# portfolio-v2
 
-This template should help get you started developing with Vue 3 in Vite.
+My personal portfolio: development work, photography (BR Frames) and a bit about me. It's a rebuild of v1, made with Vue 3, TypeScript and Vite.
 
-## Recommended IDE Setup
+## Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3 (Composition API, `<script setup>`) + TypeScript
+- Vue Router
+- Vite
+- Plain modern CSS: custom properties, native nesting, `color-mix`, all in `<style scoped>`
+- ESLint + oxlint + Prettier
 
-## Recommended Browser Setup
+## Getting started
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Requires Node `^22.18.0` or `>=24.12.0`.
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Scripts
 
-```sh
-npm run build
+| Command              | What it does                                  |
+| -------------------- | --------------------------------------------- |
+| `npm run dev`        | Start the dev server with hot reload          |
+| `npm run build`      | Type-check and build for production (`dist/`) |
+| `npm run preview`    | Serve the production build locally            |
+| `npm run type-check` | Run `vue-tsc`                                 |
+| `npm run lint`       | Run oxlint, then ESLint (both auto-fix)       |
+| `npm run format`     | Format `src/` with Prettier                   |
+
+## Structure
+
+```
+src/
+  styles/      tokens.css, base.css (global only)
+  components/  design-system components
+  pages/       one file per route
+  content/     page copy as typed TS objects
+  assets/      icons/, photos/
+  router/      route table
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Routes
 
-```sh
-npm run lint
-```
+| Path                  | Page                     |
+| --------------------- | ------------------------ |
+| `/`                   | `HomePage`               |
+| `/about`              | `AboutPage`              |
+| `/projects`           | `ProjectsPage`           |
+| `/projects/pro-zaga`  | `ProZagaCaseStudyPage`   |
+| `/projects/portfolio` | `PortfolioCaseStudyPage` |
+| `/gallery`            | `GalleryPage`            |
+| anything else         | `NotFoundPage`           |
+
+## Design
+
+- Design system: https://claude.ai/artifact/4Y1DYggSKuPpfHKxS5Jvgd
+- Screens and interaction states: https://claude.ai/artifact/Kzr4Sjs8wE4WggxLyvsnoi
+- Figma: Portfolio Revamp
+
+The build plan is in [`TODO.md`](./TODO.md).

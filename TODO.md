@@ -9,13 +9,13 @@ The v1 design is done. This is the Vue 3 build, phase by phase. Get each phase w
 ---
 
 ## Phase 0: Project setup
-- [ ] Scaffold Vue 3 + TypeScript + Vite (`npm create vue@latest`). Add Vue Router, leave out Pinia for now
-- [ ] Styling: plain modern CSS (custom properties, native nesting, `color-mix`) in Vue `<style scoped>`. No preprocessor. Add Sass later only if you really miss mixins
-- [ ] ESLint + Prettier, and a `type-check` script
-- [ ] Folder structure: `src/styles`, `src/components`, `src/pages`, `src/assets/{icons,photos}`, `src/content`
-- [ ] Routes: `/`, `/about`, `/projects`, `/projects/pro-zaga`, `/projects/portfolio`, `/gallery`, plus a 404
-- [ ] Scroll to top when the route changes (`scrollBehavior`)
-- [ ] Push the repo to GitHub (you'll need this link for the portfolio case study anyway)
+- [x] Scaffold Vue 3 + TypeScript + Vite (`npm create vue@latest`). Add Vue Router, leave out Pinia for now
+- [x] Styling: plain modern CSS (custom properties, native nesting, `color-mix`) in Vue `<style scoped>`. No preprocessor. Add Sass later only if you really miss mixins
+- [x] ESLint + Prettier, and a `type-check` script
+- [x] Folder structure: `src/styles`, `src/components`, `src/pages`, `src/assets/{icons,photos}`, `src/content`
+- [x] Routes: `/`, `/about`, `/projects`, `/projects/pro-zaga`, `/projects/portfolio`, `/gallery`, plus a 404
+- [x] Scroll to top when the route changes (`scrollBehavior`)
+- [x] Push the repo to GitHub (you'll need this link for the portfolio case study anyway)
 
 ## Phase 1: Foundations (tokens and global styles)
 - [ ] `styles/tokens.css`: the 8 colour tokens as CSS custom properties (ink, muted, accent, surface, surface-raised, line, line-strong, etc.)
@@ -30,6 +30,7 @@ The v1 design is done. This is the Vue 3 build, phase by phase. Get each phase w
 ## Phase 2: Components
 Build them in this order, simplest first. Check each one against the interaction states board.
 
+- [ ] Decide on names for the single-word components (Icon, Logo, Button, Tag, Navigation, Footer). ESLint's `vue/multi-word-component-names` rejects them, and `Button`/`Footer` also clash with HTML elements
 - [ ] **Icon**: camera, code, git, server, mail, LinkedIn, Instagram, arrows (inline SVG, `currentColor`)
 - [ ] **Logo**: the "Content" panda; rotates 6° on hover so it stands upright
 - [ ] **Button**: primary and filled variants
