@@ -1,5 +1,9 @@
-/* Design tokens: colours, type scale, spacing, corners (Phase 1). */
+/* Design tokens: colours, type scale, spacing, corners (Phase 1).
+   Values come from the design system's tokens.json (synced from Figma 2026-11-17).
+   Sizes are rem on a 16px root; hairlines, focus ring and the pill cap stay px on purpose. */
 :root {
+  /* ---------- Colour ---------- */
+
   /* Palette */
   --accent: #EF4444;
 
@@ -18,7 +22,80 @@
   --line: #FFFFFF1F;
   --line-strong: #E4E4E74D;
 
-  /* Typescale */
-  --heading-1-size:2
+  /* ---------- Type ---------- */
 
+  /* Families */
+  --font-display: "Clash Display", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Display (font-display) */
+  --heading-1-size: 3.8125rem;
+  --heading-1-line-height: 1.15;
+  --heading-1-weight: 600;
+  --heading-1-tracking: -0.01em;
+
+  --heading-2-size: 3rem;
+  --heading-2-line-height: 1.22;
+  --heading-2-weight: 600;
+  --heading-2-tracking: -0.01em;
+
+  --heading-3-size: 2.4375rem;
+  --heading-3-line-height: 1.2;
+  --heading-3-weight: 500;
+  --heading-3-tracking: 0;
+
+  --heading-4-size: 1.9531rem;
+  --heading-4-line-height: 1.25;
+  --heading-4-weight: 500;
+  --heading-4-tracking: 0;
+
+  --heading-5-size: 1.5625rem;
+  --heading-5-line-height: 1.3;
+  --heading-5-weight: 500;
+  --heading-5-tracking: 0;
+
+  --heading-6-size: 1.25rem;
+  --heading-6-line-height: 1.25;
+  --heading-6-weight: 400;
+  --heading-6-tracking: 0;
+
+  /* Text (font-mono), all weight 400 */
+  --body-size: 1rem;
+  --body-line-height: 1.4;
+
+  --small-size: 0.75rem;
+  --small-line-height: 1.5;
+
+  --caption-size: 0.625rem;
+  --caption-line-height: 1.4;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-14: 3.5rem;   /* 56px */
+
+  /* ---------- Layout ---------- */
+  --column-width: 51.875rem;  /* 830px reading column */
+  --section-gap: 7.5rem;      /* 120px between sections */
+  --gutter: 7.625rem;         /* 122px nav/footer side margin */
+
+  /* ---------- Corners ---------- */
+  --radius-none: 0;
+  --radius-pill: 999px;
+
+  /* ---------- Interaction ---------- */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+  --focus-ring-offset-row: 6px;  /* project rows */
+  --press-nudge: 1px;
+  --hover-mix: 18%;              /* filled buttons: color-mix 82/18 toward ink */
+  --logo-tilt: 6deg;
+
+  /* ---------- Motion ---------- */
+  --duration-colour: 150ms;
 }

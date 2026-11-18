@@ -19,9 +19,9 @@ The v1 design is done. This is the Vue 3 build, phase by phase. Get each phase w
 
 ## Phase 1: Foundations (tokens and global styles)
 - [x] `styles/tokens.css`: the 8 colour tokens as CSS custom properties (ink, muted, accent, surface, surface-raised, line, line-strong, etc.)
-- [ ] Type scale: the 9 type styles as utility classes (e.g. `.t-display`, `.t-mono-sm`)
-- [ ] Spacing scale, and the 2 corner styles (square and pill)
-- [ ] Fonts: JetBrains Mono, plus Clash Display with a **Space Grotesk fallback** until you have the font files
+- [x] Type scale: `.t-heading-1` to `.t-heading-6`, `.t-small` and `.t-caption` in `base.css`. Body text is styled on `body`, so there is no `.t-body`
+- [x] Spacing scale, and the 2 corner styles (square and pill)
+- [x] Fonts: JetBrains Mono, plus Clash Display with a **Space Grotesk fallback** until you have the font files
 - [ ] `styles/base.css`: reset, one background colour, and the 830px single column with 120px between sections
 - [ ] Scope bare-link styles with `a:where(:not([class]))` so they never override component classes
 - [ ] Global motion: 150ms colour transitions, all turned off under `prefers-reduced-motion`
