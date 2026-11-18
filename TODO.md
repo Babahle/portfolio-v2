@@ -18,7 +18,7 @@ The v1 design is done. This is the Vue 3 build, phase by phase. Get each phase w
 - [x] Push the repo to GitHub (you'll need this link for the portfolio case study anyway)
 
 ## Phase 1: Foundations (tokens and global styles)
-- [ ] `styles/tokens.css`: the 8 colour tokens as CSS custom properties (ink, muted, accent, surface, surface-raised, line, line-strong, etc.)
+- [x] `styles/tokens.css`: the 8 colour tokens as CSS custom properties (ink, muted, accent, surface, surface-raised, line, line-strong, etc.)
 - [ ] Type scale: the 9 type styles as utility classes (e.g. `.t-display`, `.t-mono-sm`)
 - [ ] Spacing scale, and the 2 corner styles (square and pill)
 - [ ] Fonts: JetBrains Mono, plus Clash Display with a **Space Grotesk fallback** until you have the font files

@@ -1,1 +1,24 @@
 /* Design tokens: colours, type scale, spacing, corners (Phase 1). */
+:root {
+  /* Palette */
+  --accent: #EF4444;
+
+  /* Surface */
+  --surface: #18181B;
+  --surface-raised: #2F2F2F;
+
+  /* On */
+  --on-accent: var(--surface);
+
+  /* Ink */
+  --ink: #E4E4E7;
+  --ink-muted: #A1A1AA;
+
+  /* Line */
+  --line: #FFFFFF1F;
+  --line-strong: #E4E4E74D;
+
+  /* Typescale */
+  --heading-1-size:2
+
+}
